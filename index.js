@@ -17,6 +17,9 @@ Cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
   secure: true,
 });
+app.use("/", (req, res) => {
+  res.status(200).send("Server Running");
+});
 
 // Routes
 readdirSync("./Routes").map((x) => app.use("/", require("./Routes/" + x)));
