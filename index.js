@@ -18,7 +18,7 @@ Cloudinary.config({
   secure: true,
 });
 app.use("/", (req, res) => {
-  res.status(200).send("Server Running");
+  res.status(200).send({ message: "Server Running" });
 });
 
 // Routes
