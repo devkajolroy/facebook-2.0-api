@@ -25,6 +25,6 @@ app.use("/", (req, res) => {
 readdirSync("./Routes").map((x) => app.use("/", require("./Routes/" + x)));
 
 // Listen
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("Server Running Port " + process.env.PORT);
 });
