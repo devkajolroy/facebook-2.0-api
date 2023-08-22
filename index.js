@@ -9,8 +9,8 @@ const Cloudinary = require("cloudinary").v2;
 //config
 dotenv.config();
 app.use(cors({
-  allowedHeaders: ["authorization", "Content-Type"],
- origin: "*",
+    allowedHeaders: ["authorization", "Content-Type"],
+   origin: "https://facebook-2-0-frontend.vercel.app",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     preflightContinue: false  
 }));
